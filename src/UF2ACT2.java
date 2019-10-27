@@ -18,8 +18,8 @@ public class UF2ACT2 {
     final Runnable ob = new UF2ACT2().new ExecutaFil();
     // Programa Fil, s’inicia als 5 segons i després es va executant cada 6 segons
     schExService.scheduleWithFixedDelay(ob, 5, 6, TimeUnit.SECONDS);
-    // Espera per acabar 6 segons
-    schExService.awaitTermination(6, TimeUnit.SECONDS);
+    // Espera per acabar 32 segons per a deixar temps suficient per que s'executin 5 tasques
+    schExService.awaitTermination(32, TimeUnit.SECONDS);
     // shutdown .
     schExService.shutdownNow();
     System.out.println("Completat");
