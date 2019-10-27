@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class UF2ACT2 {
 
+	//prova
     public static void main(final String... args) throws InterruptedException, ExecutionException {
         //mostrem hora actual abans d’execució
     Calendar calendario = new GregorianCalendar();
